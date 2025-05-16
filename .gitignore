@@ -1,9 +1,37 @@
+# Build targets
 target/
+build/
+/dist/
+/nbdist/
+/nbbuild/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### IntelliJ IDEA ###
+# Compiled files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE - IntelliJ IDEA
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -12,7 +40,7 @@ target/
 *.iml
 *.ipr
 
-### Eclipse ###
+# IDE - Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -21,18 +49,16 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
+# IDE - NetBeans
 /nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# IDE - VS Code
 .vscode/
 
-### Mac OS ###
+# OS specific files
 .DS_Store
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
