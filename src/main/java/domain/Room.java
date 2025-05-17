@@ -3,9 +3,9 @@ package domain;
 public class Room {
 
     private String status, style, roomNumber;
-    private int price;
+    private double price;
 
-    public Room(String status, String style, String roomNumber, int price) {
+    public Room(String status, String style, String roomNumber, double price) {
         this.status = status;
         this.style = style;
         this.roomNumber = roomNumber;
@@ -36,11 +36,11 @@ public class Room {
         this.roomNumber = roomNumber;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
