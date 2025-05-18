@@ -17,4 +17,6 @@ public class Action {
     // -> Acciones de las Habitaciones
     public static final String ROOM_REGISTER = "roomRegister";
 
+    public static final String ROOM_REGISTERED = "roomRegistered";
+
 }
