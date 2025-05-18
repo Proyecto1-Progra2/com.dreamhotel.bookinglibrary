@@ -62,7 +62,7 @@ public class Room {
         for (Image image : images) {
             imagesString += image.toString();
         }
-        return "-"+this.roomNumber+"-"+this.status +"-"+this.style+"-"+this.price+"-"+imagesString;
+        return "-"+this.roomNumber+"-"+this.status +"-"+this.style+"-"+this.price;
     }
 }
 
