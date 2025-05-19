@@ -4,6 +4,8 @@ public class Hotel {
 
     private String number, name, address;
 
+
+
     public Hotel(String number, String name, String address) {
         this.number = number;
         this.name = name;
