@@ -16,7 +16,21 @@ public class Action {
 
     // -> Acciones de las Habitaciones
     public static final String ROOM_REGISTER = "roomRegister";
-
+    //hacer la accion en la libreria, y en cada view
+    public static final String ROOM_LIST = "roomList";
+    public static final String ROOM_SEARCH = "roomlRequest";
+    public static final String ROOM_UPDATE = "roomUpdate";
+    public static final String ROOM_DELETE = "roomDelete";
+   //revisar esto
     public static final String ROOM_REGISTERED = "roomRegistered";
+    public static final String ROOM_REQUESTED = "roomRequested";
+    public static final String ROOM_UPDATED = "roomUpdated";
+    public static final String ROOM_DELETED = "roomDeleted";
+
+
+
+
+
+
 
 }
