@@ -1,19 +1,17 @@
 package domain;
 
-import java.util.ArrayList;
-
 public class Room {
 
     private String status, style, roomNumber;
     private double price;
-    private ArrayList<Image> images;
+    private Image image;
 
-    public Room(String roomNumber, String status, String style, double price) {
+    public Room(String roomNumber, String status, String style, double price, Image image) {
         this.roomNumber = roomNumber;
         this.status = status;
         this.style = style;
         this.price = price;
-        this.images = new ArrayList<>();
+        this.image = image;
     }
 
     public String getStatus() {
@@ -48,19 +46,18 @@ public class Room {
         this.price = price;
     }
 
-    public ArrayList<Image> getImages() {
-        return images;
+    public Image getImage() {
+        return image;
     }
 
-    public void setImages(ArrayList<Image> images) {
-        this.images = images;
+    public void setImage(Image image) {
+        this.image = image;
     }
 
     @Override
     public String toString() {
-        String imagesString = "";
-        for (Image image : images) {
-            imagesString += image.toString();
+        if (this.image!=null){
+            return "-"+this.roomNumber+"-"+this.status +"-"+this.style+"-"+this.price+"-"+this.image;
         }
         return "-"+this.roomNumber+"-"+this.status +"-"+this.style+"-"+this.price;
     }

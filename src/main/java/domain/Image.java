@@ -7,7 +7,7 @@ public class Image {
     private String roomNumber;
     private File image;
 
-    public Image(File image, String roomNumber) {
+    public Image(String roomNumber, File image) {
         this.image = image;
         this.roomNumber = roomNumber;
     }
@@ -30,6 +30,6 @@ public class Image {
 
     @Override
     public String toString() {
-        return "-"+this.roomNumber +"-"+this.image;
+        return this.roomNumber +"-"+this.image;
     }
 }
