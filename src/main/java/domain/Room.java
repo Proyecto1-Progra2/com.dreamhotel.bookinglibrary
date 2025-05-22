@@ -1,17 +1,20 @@
 package domain;
 
+import java.io.File;
+
 public class Room {
 
-    private String status, style, roomNumber;
+    private String status, style, roomNumber, hotelNumber;
     private double price;
-    private Image image;
+    private Image image; // Ahora es del tipo domain.Image
 
-    public Room(String roomNumber, String status, String style, double price, Image image) {
+    public Room(String roomNumber, String status, String style, double price, Image image, String hotelNumber) {
         this.roomNumber = roomNumber;
         this.status = status;
         this.style = style;
         this.price = price;
         this.image = image;
+        this.hotelNumber = hotelNumber;
     }
 
     public String getStatus() {
@@ -54,12 +57,21 @@ public class Room {
         this.image = image;
     }
 
+    public String getHotelNumber() {
+        return hotelNumber;
+    }
+
+    public void setHotelNumber(String hotelNumber) {
+        this.hotelNumber = hotelNumber;
+    }
+
     @Override
     public String toString() {
-        if (this.image!=null){
-            return "-"+this.roomNumber+"-"+this.status +"-"+this.style+"-"+this.price+"-"+this.image;
+        // Al usar 'this.image', se llamará automáticamente a this.image.toString() si no es null
+        // Lo importante es que el toString() de Image devuelva una cadena útil para guardar/cargar.
+        if (this.image != null){
+            return "-" + this.roomNumber + "-" + this.status + "-" + this.style + "-" + this.price + "-" + this.image + "-" + this.hotelNumber;
         }
-        return "-"+this.roomNumber+"-"+this.status +"-"+this.style+"-"+this.price;
+        return "-" + this.roomNumber + "-" + this.status + "-" + this.style + "-" + this.price + "-" + this.hotelNumber;
     }
 }
-
