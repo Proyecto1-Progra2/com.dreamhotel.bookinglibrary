@@ -9,6 +9,7 @@ public class Action {
     public static final String HOTEL_SEARCH = "hotelRequest";
     public static final String HOTEL_UPDATE = "hotelUpdate";
     public static final String HOTEL_DELETE = "hotelDelete";
+    public static final String HOTEL_ROOMS = "hotelRooms";
 
 
     public static final String HOTEL_REGISTERED = "hotelRegistered";

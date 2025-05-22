@@ -17,6 +17,14 @@ public class Room {
         this.hotelNumber = hotelNumber;
     }
 
+    public Room(String roomNumber, String status, String style, double price, String hotelNumber) {
+        this.roomNumber = roomNumber;
+        this.status = status;
+        this.style = style;
+        this.price = price;
+        this.hotelNumber = hotelNumber;
+    }
+
     public String getStatus() {
         return status;
     }
