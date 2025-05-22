@@ -8,12 +8,22 @@ public class RoomTableModel {
     private final SimpleStringProperty roomStatus;
     private final SimpleStringProperty roomStyle;
     private final SimpleDoubleProperty roomPrice;
+    private final SimpleStringProperty roomHotelNumber;
 
-    public RoomTableModel(String roomNumber, String roomStatus, String roomStyle, double roomPrice) {
+    public RoomTableModel(String roomNumber, String roomStatus, String roomStyle, double roomPrice, String roomHotelNumber) {
         this.roomNumber = new SimpleStringProperty(roomNumber);
         this.roomStatus = new SimpleStringProperty(roomStatus);
         this.roomStyle = new SimpleStringProperty(roomStyle);
         this.roomPrice = new SimpleDoubleProperty(roomPrice);
+        this.roomHotelNumber = new SimpleStringProperty(roomHotelNumber);
+    }
+
+    public String getRoomHotelNumber() {
+        return roomHotelNumber.get();
+    }
+
+    public SimpleStringProperty roomHotelNumberProperty() {
+        return roomHotelNumber;
     }
 
     public String getRoomNumber() {
