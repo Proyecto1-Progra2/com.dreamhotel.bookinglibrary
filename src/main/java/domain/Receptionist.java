@@ -10,7 +10,7 @@ public class Receptionist extends Person{
         this.username = username;
         this.password = password;
     }
-++
+
     public String getEmployedNumber() {
         return employedNumber;
     }
