@@ -33,6 +33,9 @@ public class Action {
     public static final String ROOM_UPDATED = "roomUpdated";
     public static final String ROOM_DELETED = "roomDeleted";
 
+    // -> Acciones de imagen
+    public static final String IMAGE_REQUEST = "imageRequest";
+
 
 
 

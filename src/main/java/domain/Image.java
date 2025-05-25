@@ -28,6 +28,6 @@ public class Image {
 
     @Override
     public String toString() {
-        return roomNumber + " - " + (image != null ? image.length + " bytes" : "no image");
+        return roomNumber + "-" + (image != null ? image.length + "bytes" : "no image");
     }
 }

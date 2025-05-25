@@ -1,6 +1,9 @@
 package utils;
 
+import domain.Image;
+
 import java.io.*;
+import java.util.ArrayList;
 
 public class ImageUtils {
 
