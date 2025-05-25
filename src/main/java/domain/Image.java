@@ -1,13 +1,11 @@
 package domain;
 
-import java.io.File;
-
 public class Image {
 
     private String roomNumber;
-    private File image;
+    private byte[] image;
 
-    public Image(String roomNumber, File image) {
+    public Image(String roomNumber, byte[] image) {
         this.image = image;
         this.roomNumber = roomNumber;
     }
@@ -20,16 +18,16 @@ public class Image {
         this.roomNumber = roomNumber;
     }
 
-    public File getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(File image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 
     @Override
     public String toString() {
-        return this.roomNumber +"-"+this.image;
+        return roomNumber + " - " + (image != null ? image.length + " bytes" : "no image");
     }
 }
