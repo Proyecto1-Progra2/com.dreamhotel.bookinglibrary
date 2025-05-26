@@ -75,7 +75,7 @@ public class Room {
 
     @Override
     public String toString() {
-        String imageData = (this.image != null) ? this.image.toString() : "null";
+        String imageData = (this.image != null) ? this.image.toString() : "null-null";
         return "-" + this.roomNumber + "-" + this.status + "-" + this.style + "-" + this.price + "-" + imageData + "-" + this.hotelNumber;
     }
 
