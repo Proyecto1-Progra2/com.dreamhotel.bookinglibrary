@@ -75,11 +75,8 @@ public class Room {
 
     @Override
     public String toString() {
-        // Al usar 'this.image', se llamará automáticamente a this.image.toString() si no es null
-        // Lo importante es que el toString() de Image devuelva una cadena útil para guardar/cargar.
-        if (this.image != null){
-            return "-" + this.roomNumber + "-" + this.status + "-" + this.style + "-" + this.price + "-" + this.image + "-" + this.hotelNumber;
-        }
-        return "-" + this.roomNumber + "-" + this.status + "-" + this.style + "-" + this.price + "-" + this.hotelNumber;
+        String imageData = (this.image != null) ? this.image.toString() : "null";
+        return "-" + this.roomNumber + "-" + this.status + "-" + this.style + "-" + this.price + "-" + imageData + "-" + this.hotelNumber;
     }
+
 }
