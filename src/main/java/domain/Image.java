@@ -2,12 +2,21 @@ package domain;
 
 public class Image {
 
-    private String roomNumber;
+    private String roomNumber, hotelNumber;
     private byte[] image;
 
-    public Image(String roomNumber, byte[] image) {
+    public Image(String roomNumber, String hotelNumber, byte[] image) {
         this.image = image;
         this.roomNumber = roomNumber;
+        this.hotelNumber = hotelNumber;
+    }
+
+    public String getHotelNumber() {
+        return hotelNumber;
+    }
+
+    public void setHotelNumber(String hotelNumber) {
+        this.hotelNumber = hotelNumber;
     }
 
     public String getRoomNumber() {
@@ -28,6 +37,6 @@ public class Image {
 
     @Override
     public String toString() {
-        return roomNumber + "-" + (image != null ? image.length + "bytes" : "no image");
+        return roomNumber +"-"+hotelNumber+ "-" + (image != null ? image.length + "bytes" : "no image");
     }
 }
