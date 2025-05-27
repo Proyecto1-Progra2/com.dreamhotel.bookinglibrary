@@ -52,7 +52,7 @@ public class Hotel {
         for (Room room : this.rooms) {
             rooms += room.toString();
         }
-        return "-" + this.number + "-" + this.name + "-" + this.address + rooms;
+        return "|||" + this.number + "|||" + this.name + "|||" + this.address + rooms;
     }
 
 }

@@ -37,6 +37,6 @@ public class Image {
 
     @Override
     public String toString() {
-        return roomNumber +"-"+hotelNumber+ "-" + (image != null ? image.length + "bytes" : "no image");
+        return roomNumber +"|||"+hotelNumber+ "|||" + (image != null ? image.length + "bytes" : "no image");
     }
 }
