@@ -45,6 +45,9 @@ public class Action {
     public static final String RECEPTIONIST_REGISTERED = "receptionistRegistered";
     public static final String RECEPTIONIST_SEARCH = "receptionistRequest";
 
+    // -> Acciones de Booking
+    public static final String BOOKING_REGISTER = "bookingRegister";
+
 
 
 

@@ -37,10 +37,13 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                '}';
+        return this.name+"|||"+this.lastName;
+    }
+
+    public static Person fromString(String str) {
+        String[] parts = str.split("\\|\\|\\|");
+        String name = parts[0];
+        String lastName = parts[1];
+        return new Person(name, lastName, 0); // Se pierde el número telefónico
     }
 }
