@@ -2,9 +2,10 @@ package domain;
 
 public class Person {
 
-    protected String name, lastName, phoneNumber;
+    protected String name, lastName;
+    protected int phoneNumber;
 
-    public Person(String name, String lastName, String phoneNumber) {
+    public Person(String name, String lastName, int phoneNumber) {
         this.name = name;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
@@ -26,11 +27,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public String getPhoneNumber() {
+    public int getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

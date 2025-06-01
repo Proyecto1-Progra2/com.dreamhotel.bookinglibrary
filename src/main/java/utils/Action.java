@@ -36,6 +36,14 @@ public class Action {
     // -> Acciones de imagen
     public static final String IMAGE_REQUEST = "imageRequest";
 
+    // -> Acciones de recepcionista
+    public static final String RECEPTIONIST_LOGIN = "receptionistLogin";
+    public static final String RECEPTIONIST_NOT_LOGIN = "receptionistNotLogin";
+
+    public static final String RECEPTIONIST_REGISTER = "receptionistRegister";
+    public static final String RECEPTIONIST_NOT_REGISTERED="receptionistNoTRegistered";
+    public static final String RECEPTIONIST_REGISTERED = "receptionistRegistered";
+    public static final String RECEPTIONIST_SEARCH = "receptionistRequest";
 
 
 

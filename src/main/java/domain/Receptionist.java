@@ -4,7 +4,7 @@ public class Receptionist extends Person{
 
     private String employedNumber, username, password;
 
-    public Receptionist(String name, String lastName, String phoneNumber, String employedNumber, String username, String password) {
+    public Receptionist(String employedNumber, String name, String lastName, int phoneNumber, String username, String password) {
         super(name, lastName, phoneNumber);
         this.employedNumber = employedNumber;
         this.username = username;
@@ -43,7 +43,7 @@ public class Receptionist extends Person{
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", phoneNumber='" + phoneNumber  +
                 '}';
     }
 }

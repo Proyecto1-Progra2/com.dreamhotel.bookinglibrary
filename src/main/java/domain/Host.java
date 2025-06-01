@@ -4,7 +4,7 @@ public class Host extends Person{
 
     private String id, address, email, country;
 
-    public Host(String name, String lastName, String phoneNumber, String id, String address, String email, String country) {
+    public Host(String name, String lastName, int phoneNumber, String id, String address, String email, String country) {
         super(name, lastName, phoneNumber);
         this.id = id;
         this.address = address;
@@ -20,21 +20,6 @@ public class Host extends Person{
         this.id = id;
     }
 
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public String getLastName() {
-//        return lastName;
-//    }
-//
-//    public void setLastName(String lastName) {
-//        this.lastName = lastName;
-//    }
 
     public String getAddress() {
         return address;
@@ -52,13 +37,6 @@ public class Host extends Person{
         this.email = email;
     }
 
-//    public String getPhoneNumber() {
-//        return phoneNumber;
-//    }
-//
-//    public void setPhoneNumber(String phoneNumber) {
-//        this.phoneNumber = phoneNumber;
-//    }
 
     public String getCountry() {
         return country;
