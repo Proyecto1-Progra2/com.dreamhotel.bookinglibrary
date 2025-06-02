@@ -47,6 +47,9 @@ public class Action {
 
     // -> Acciones de Booking
     public static final String BOOKING_REGISTER = "bookingRegister";
+    public static final String REQUEST_BOOKING_NUMBER = "bookingNumber";
+    public static final String BOOKING_NUMBER_EXIST = "bookingExist";
+    public static final String BOOKING_NUMBER_NO_EXIST = "bookingNoExist";
 
 
 

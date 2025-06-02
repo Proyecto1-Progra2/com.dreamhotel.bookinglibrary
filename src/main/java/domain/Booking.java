@@ -8,7 +8,8 @@ public class Booking {
     private Person host, receptionist;
     private LocalDate startDate, departureDate;
 
-    public Booking(String bookingNumber, Person host, LocalDate startDate, LocalDate departureDate, Person receptionist, String roomNumber, String hotelNumber) {
+    public Booking(String bookingNumber, Person host, LocalDate startDate, LocalDate departureDate,
+                   Person receptionist, String roomNumber, String hotelNumber) {
         this.bookingNumber = bookingNumber;
         this.roomNumber = roomNumber;
         this.hotelNumber = hotelNumber;
