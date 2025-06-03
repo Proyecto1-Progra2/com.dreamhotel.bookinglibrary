@@ -4,7 +4,7 @@ public class Host extends Person{
 
     private String id, address, email, country;
 
-    public Host(String name, String lastName, int phoneNumber, String id, String address, String email, String country) {
+    public Host(String id, String name, String lastName, int phoneNumber, String address, String email, String country) {
         super(name, lastName, phoneNumber);
         this.id = id;
         this.address = address;
