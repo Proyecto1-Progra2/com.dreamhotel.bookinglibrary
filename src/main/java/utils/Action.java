@@ -50,6 +50,7 @@ public class Action {
     public static final String REQUEST_BOOKING_NUMBER = "bookingNumber";
     public static final String BOOKING_NUMBER_EXIST = "bookingExist";
     public static final String BOOKING_NUMBER_NO_EXIST = "bookingNoExist";
+    public static final String BOOKING_LIST = "bookingList";
 
 
 
