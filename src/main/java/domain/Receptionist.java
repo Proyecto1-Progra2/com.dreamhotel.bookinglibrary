@@ -37,13 +37,6 @@ public class Receptionist extends Person{
 
     @Override
     public String toString() {
-        return "Receptionist{" +
-                "employedNumber='" + employedNumber + '\'' +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", phoneNumber='" + phoneNumber  +
-                '}';
+        return "|||"+this.employedNumber+"|||"+this.name+"|||"+this.lastName+"|||"+this.phoneNumber+"|||"+this.username+"|||"+this.password;
     }
 }
