@@ -13,7 +13,7 @@ public class Action {
 
 
     public static final String HOTEL_REGISTERED = "hotelRegistered";
-    public static final String HOTEL_NOT_REGISTERED="hotelNoRegistered";
+    public static final String HOTEL_NOT_REGISTERED="hotelNoTRegistered";
     public static final String HOTEL_REQUESTED = "hotelRequested";
     public static final String HOTEL_UPDATED = "hotelUpdated";
     public static final String HOTEL_DELETED = "hotelDeleted";
