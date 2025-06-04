@@ -20,7 +20,6 @@ public class Host extends Person{
         this.id = id;
     }
 
-
     public String getAddress() {
         return address;
     }
@@ -37,7 +36,6 @@ public class Host extends Person{
         this.email = email;
     }
 
-
     public String getCountry() {
         return country;
     }
@@ -48,14 +46,6 @@ public class Host extends Person{
 
     @Override
     public String toString() {
-        return "Host{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address='" + address + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", country='" + country + '\'' +
-                '}';
+        return "|||"+this.id+"|||"+this.name+"|||"+this.lastName+"|||"+this.phoneNumber+"|||"+this.address+"|||"+this.email+"|||"+this.country;
     }
 }

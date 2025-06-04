@@ -56,5 +56,8 @@ public class Action {
     public static final String HOST_REGISTER = "hostRegister";
     public static final String HOST_NOT_REGISTERED = "host_not_registered";
     public static final String HOST_REGISTERED = "hostRegistered";
+    public static final String HOST_REQUEST = "hostRequest";
+    public static final String HOST_EXIST = "hostExist";
+    public static final String HOST_NO_EXIST = "hostNoExist";
 
 }
