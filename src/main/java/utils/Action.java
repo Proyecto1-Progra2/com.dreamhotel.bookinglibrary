@@ -52,7 +52,7 @@ public class Action {
     public static final String BOOKING_NUMBER_NO_EXIST = "bookingNoExist";
     public static final String BOOKING_LIST = "bookingList";
     public static final String BOOKING_DELETE = "bookingDelete";
-
+    public static final String HOTEL_ROOMS_BOOKING = "hotelRoomsBooking";
 
     public static final String HOST_REGISTER = "hostRegister";
     public static final String HOST_NOT_REGISTERED = "host_not_registered";
