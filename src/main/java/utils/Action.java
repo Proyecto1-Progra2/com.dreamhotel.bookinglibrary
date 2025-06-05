@@ -51,6 +51,7 @@ public class Action {
     public static final String BOOKING_NUMBER_EXIST = "bookingExist";
     public static final String BOOKING_NUMBER_NO_EXIST = "bookingNoExist";
     public static final String BOOKING_LIST = "bookingList";
+    public static final String BOOKING_DELETE = "bookingDelete";
 
 
     public static final String HOST_REGISTER = "hostRegister";
